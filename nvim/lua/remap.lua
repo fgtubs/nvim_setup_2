@@ -15,3 +15,8 @@ vim.api.nvim_set_keymap('i', '<C-v>', '<C-r>+', { noremap = true, silent = true 
 
 -- Mapping for the listen-cmd to Ctrl-l (for listen)
 vim.api.nvim_set_keymap('i', '<C-l>', '<C-v>', { noremap = true, silent = true })
+
+-- Define a visual mode mapping for searching the highlighted text
+vim.api.nvim_set_keymap('v', '<Leader>/', 'y/<C-R>"<CR>', { noremap = true, silent = true })
+
+

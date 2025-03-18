@@ -19,7 +19,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'clangd', 'gopls', 'ltex', 'lua_ls',  'pyright', 'rust_analyzer', 'yamlls', 'bashls'},
+  ensure_installed = {'gopls', 'ltex', 'lua_ls',  'pyright', 'rust_analyzer', 'yamlls', 'bashls'},
   -- Available LSP servers under: https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers
   handlers = {
     lsp_zero.default_setup,

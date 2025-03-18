@@ -14,3 +14,6 @@ vim.opt.incsearch = true	-- permitts incremental search, with * as a wildcard
 
 -- Scroll
 vim.opt.scrolloff = 8
+
+-- copy and paste to system clipboard
+vim.opt.clipboard = "unnamedplus"
