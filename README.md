@@ -32,3 +32,24 @@
 └── plugin
 
 .    └── packer_compiled.lua         # compiled by the system. Dont touch
+
+
+
+
+---
+
+### Installation
+
+if installed on nixos, make sure that this packages are installed:
+  gcc
+  pkg-config
+  (not 100% sure that this is enough, if not run this in an nix-shell environment)
+
+move the nvim directory to .conf/nvim
+
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+open plugins.lua
+call: ```:PackerSync``
